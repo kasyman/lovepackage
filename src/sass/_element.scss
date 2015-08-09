@@ -1,0 +1,12 @@
+.i-loading{
+    width: 60px;
+    height: 60px;
+    background: url(../img/loading_water.png) 0 0;
+    background-size: auto 60px;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation: loading 2s steps(39, start) 0s infinite normal backwards;
+}
+@-webkit-keyframes loading{
+    0%{  background-position: 0px 0px;  }
+    100%{  background-position: -2340px 0px;  }
+}

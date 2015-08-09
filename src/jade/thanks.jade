@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+html(lang="zh-CN",data-use-rem="")
+  head
+    meta(charset="utf-8")
+    meta(name='viewport', content='width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no')
+    meta(name='description', content='description')
+    meta(name='keywords', content='a,b')
+    title 您是第305959位送出爱心包裹的人
+    script(src='../js/grid.js')
+    link(rel="stylesheet", href="../css/style.css")
+  body
+    .wrapper
+      .share-wrap
+        .share-hint
+      .p-thanks
+        .child-face
+        .thanks-words
+          .user-info-wrap
+            span.user-head
+            .user-name roamye哥哥
+        .bottom-contenter
+          p.hint-words 您是第<span class='white'>305959</span>位送出爱心包裹的人
+          .btn-wrap
+            .thanks-btn.share-to-friend 分享给朋友们
+            .thanks-btn.donate-with-friend 和朋友一起捐
+            .thanks-btn.see-our-story 查看我们的故事
+  script(src='../js/zepto.min.js')
+  script.
+    var share_wrap = $('.share-wrap');
+
+    $('.share-to-friend').on('touchstart',function(e){
+      share_wrap.css('display','block');
+    });
+    $('.donate-with-friend').on('touchstart',function(e){
+      share_wrap.css('display','block');
+    });
+    $('.see-our-story').on('touchstart',function(e){
+      location.href = "index.html";
+    });
+
+    share_wrap.on('touchstart',function(e){
+        share_wrap.css('display','none');
+    });
+

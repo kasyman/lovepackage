@@ -1,0 +1,1225 @@
+.p-section 
+{
+	height: 100%;
+	background-position: center center;
+	background-size: 100% 100%;
+	background-image: url(../img/bg-crow.jpg);
+
+	.arrow-down {
+		opacity: 1;
+		width: 0.6rem;
+		height: 0.5rem;
+		position: absolute;
+		left: 50%;
+		bottom: 0.5rem;
+		margin-left: -0.3rem;
+
+		background-position: center center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-image: url(../img/icon-top.png);
+
+		-webkit-transition: opacity 0.5s;
+		-webkit-animation: arrow-down 1s infinite;
+
+		&.hide {
+			opacity: 0;
+		}
+	}
+
+	.guide-top {
+		opacity: 0;
+		width: 6.4rem;
+		height: 3.52rem;
+		position: absolute;
+		left: 0rem;
+		top: 0rem;
+
+		background-position: center center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-image: url(../img/guide-top.jpg);
+	}
+
+	.guide-bottom {
+		opacity: 0;
+		width: 6.4rem;
+		height: 4.42rem;
+		position: absolute;
+		left: 0rem;
+		bottom: 0rem;
+
+		background-position: center center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-image: url(../img/guide-bottom.jpg);
+
+		.tree-band {
+			position: absolute;
+			width: 0.72rem;
+			height: 1rem;
+			bottom: 0.5rem;
+			right: 1.7rem;
+			background-position: center center;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-image: url(../img/tree-band.png);
+
+			-webkit-transform-origin: right center;
+			-webkit-animation: tree-band-animation 1s infinite alternate;
+		}
+
+	}
+
+	.guide-title {
+		opacity: 0;
+		width: 4.6rem;
+		height: 0.8rem;
+		position: absolute;
+		left: 0.9rem;
+		top: 2rem;
+
+		background-position: center center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-image: url(../img/guide-title.png);
+	}
+
+	.guide-words {
+		opacity: 0;
+		width: 5.32rem;
+		position: absolute;
+		left: 0.53rem;
+		top: 3rem;
+
+		background-position: top center;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		background-image: url(../img/guide-words.png);
+	}
+
+	.guide-top, .guide-bottom, .guide-words, .guide-title {
+		-webkit-transition: opacity 0.2s;
+	}
+
+	.words-1 {
+		opacity: 0;
+		width: 4rem;
+		height: 2rem;
+		position: absolute;
+		left: 1.2rem;
+		top: 0.8rem;
+
+		background-position: center center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-image: url(../img/words-1.png);
+	}
+	.words-2 {
+		opacity: 0;
+		width: 3.72rem;
+		height: 1.5rem;
+		position: absolute;
+		left: 1.34rem;
+		top: 0.8rem;
+
+		background-position: center center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-image: url(../img/words-2.png);
+	}
+	.words-3 {
+		opacity: 0;
+		width: 3.02rem;
+		height: 1.7rem;
+		position: absolute;
+		left: 1.7rem;
+		top: 0.8rem;
+
+		-webkit-transition: opacity 0.5s;
+
+		background-position: center center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-image: url(../img/words-3.png);
+	}
+
+	.drawing-picture {
+		opacity: 0;
+		width: 6.4rem;
+		height: 4.8rem;
+		position: absolute;
+		left: 0;
+		bottom: 3.2rem;
+
+		background-position: center center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-image: url(../img/drawing-picture.png);
+	}
+
+	.drawing-picture-nocolor {
+		opacity: 0;
+		width: 6.4rem;
+		height: 5.02rem;
+		position: absolute;
+		left: 0;
+		bottom: 3.2rem;
+
+		background-position: center center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-image: url(../img/picture-nocolor.png);
+
+		.drawing-picture-color {
+			width: 0rem;
+			height: 5.02rem;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+
+			background-position: right center;
+			background-size: auto 100%;
+			background-repeat: no-repeat;
+			background-image: url(../img/picture-color.png);
+		}
+	}
+
+	.controller-wrap {
+		opacity: 0;
+
+		width: 6.4rem;
+		height: 5.02rem;
+		position: absolute;
+		left: 0;
+		bottom: 3.2rem;
+
+		-webkit-transition: opacity 0.5s;
+
+		.rainbow-change {
+			width: 0.1rem;
+			height: 5.02rem;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+
+			background-position: right center;
+			background-size: auto 100%;
+			background-repeat: no-repeat;
+			background-image: url(../img/rainbow-change.png);
+		}
+	}
+
+	.drawing-chair {
+		opacity: 0;
+		width: 1.48rem;
+		height: 2rem;
+		position: absolute;
+		left: 2.6rem;
+		bottom: 0.95rem;
+
+		background-position: center center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-image: url(../img/drawing-chair.png);
+	}
+	.drawing-chair-color {
+		opacity: 0;
+		width: 1.48rem;
+		height: 2rem;
+		position: absolute;
+		left: 2.6rem;
+		bottom: 0.95rem;
+
+		background-position: center center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-image: url(../img/drawing-chair-color.png);
+	}
+
+	.footer-wrap {
+		opacity: 0;
+		height: 1.73rem;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		.footer-top {
+			height: 0.48rem;
+			background-position: center center;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-image: url(../img/footer-top.png);
+		}
+
+		.footer-bottom {
+			height: 1.25rem;
+			background-position: center center;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-image: url(../img/footer-bottom.jpg);
+		}
+	}
+	.footer-wrap-color {
+		opacity: 0;
+		height: 1.73rem;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		background-position: center center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-image: url(../img/footer-color.png);
+	}
+
+	.cloud-1 {
+		width: 1.6rem;
+		height: 1.08rem;
+		position: absolute;
+		left: 0.38rem;
+		bottom: 7.8rem;
+
+		-webkit-transform: translateX(-2.1rem);
+
+		background-position: center center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-image: url(../img/cloud-1.png);
+	}
+
+	.rainbow-wrap {
+		width: 2.2rem;
+		height: 1.68rem;
+		position: absolute;
+		right: 0.05rem;
+		bottom: 6.6rem;
+
+		-webkit-transform: translateX(2.4rem);
+
+		.rainbow {
+			width: 4.88rem;
+			height: 0;
+			position: absolute;
+			right: 50%;
+			top: 0.3rem;
+
+			background-position: top center;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			background-image: url(../img/rainbow.png);
+		}
+
+		.cloud-2 {
+			width: 2.2rem;
+			height: 1.68rem;
+			position: absolute;
+			left: 0;
+			top: 0;
+
+			background-position: center center;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-image: url(../img/cloud-2.png);
+		}
+
+	}
+
+	.cloud-3 {
+		width: 0.92rem;
+		height: 0.56rem;
+		position: absolute;
+		right: 0.9rem;
+		bottom: 4.3rem;
+
+		-webkit-transform: translateX(2rem);
+
+		background-position: center center;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		background-image: url(../img/cloud-3.png);
+	}
+
+	.cloud-4 {
+		opacity: 0;
+		width: 2.3rem;
+		height: 1.38rem;
+		position: absolute;
+		left: 0.38rem;
+		bottom: 7.3rem;
+
+
+		background-position: center center;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		background-image: url(../img/cloud-ori.png);
+	}
+
+	.cloud-5 {
+		opacity: 0;
+		width: 2.3rem;
+		height: 1.38rem;
+		position: absolute;
+		right: -0.05rem;
+		bottom: 5.13rem;
+
+		-webkit-transform: scale(1.5);
+
+		background-position: center center;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		background-image: url(../img/cloud-ori.png);
+	}
+
+	.rainbow-show {
+		opacity: 0;
+		width: 6.4rem;
+		height: 7.48rem;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		background-position: top center;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		background-image: url(../img/rainbow-show.png);
+	}
+
+	.cloud-6 {
+		opacity: 0;
+		width: 2.3rem;
+		height: 1.38rem;
+		position: absolute;
+		left: -1.2rem;
+		bottom: -0.2rem;
+
+		-webkit-transform: scale(2.4);
+
+		background-position: center center;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		background-image: url(../img/cloud-ori.png);
+	}
+
+	.cloud-7 {
+		opacity: 0;
+		width: 2.3rem;
+		height: 1.38rem;
+		position: absolute;
+		right: 1rem;
+		bottom: -0.9rem;
+
+		-webkit-transform: scale(2.2);
+
+		background-position: center center;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		background-image: url(../img/cloud-ori.png);
+	}
+
+	.donate-bg {
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		-webkit-transition: opacity 0.5s;
+
+		background-position: center center;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		background-image: url(../img/donate-bg.jpg);
+
+		.donate-send-btn {
+			width: 4.6rem;
+			height: 0.8rem;
+			position: absolute;
+			left: 0.9rem;
+			bottom: 2.3rem;
+
+			background-position: center center;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			background-image: url(../img/donate-send-btn.png);
+		}
+
+		.donate-share-btn {
+			width: 4.6rem;
+			height: 0.8rem;
+			position: absolute;
+			left: 0.9rem;
+			bottom: 1rem;
+
+			background-position: center center;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			background-image: url(../img/donate-share-btn.png);
+		}
+
+		&.show-box {
+			.donate-box-wrap {
+				z-index: 100;
+				display: block;
+			}
+		}
+
+		.donate-box-wrap {
+			display: none;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background-color: rgba(0,0,0,0.75);
+
+			-webkit-transition: opacity 0.5s;
+
+			&.show-rule {
+				.donate-rule-wrap {
+					z-index: 100;
+					opacity: 1;
+				}
+			}
+		}
+
+		.donate-box {
+			width: 5.42rem;
+			height: 7.45rem;
+			position: absolute;
+			left: 0.49rem;
+			top: 50%;
+			margin-top: -3.725rem;
+
+			background-position: center center;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-image: url(../img/donate-box.png);
+
+			.donate-btn-20 {
+				width: 3.4rem;
+				height: 0.62rem;
+				position: absolute;
+				left: 1.01rem;
+				bottom: 4rem;
+
+				background-position: center center;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				background-image: url(../img/donate-btn-20.png);
+			}
+			.donate-btn-50 {
+				width: 3.4rem;
+				height: 0.62rem;
+				position: absolute;
+				left: 1.01rem;
+				bottom: 3.3rem;
+
+				background-position: center center;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				background-image: url(../img/donate-btn-50.png);
+			}
+			.donate-btn-100 {
+				width: 3.4rem;
+				height: 0.62rem;
+				position: absolute;
+				left: 1.01rem;
+				bottom: 2.6rem;
+
+				background-position: center center;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				background-image: url(../img/donate-btn-100.png);
+			}
+			.donate-btn-500 {
+				width: 3.4rem;
+				height: 0.62rem;
+				position: absolute;
+				left: 1.01rem;
+				bottom: 1.9rem;
+
+				background-position: center center;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				background-image: url(../img/donate-btn-500.png);
+			}
+			.donate-btn-other {
+				width: 3.4rem;
+				height: 0.62rem;
+				position: absolute;
+				left: 1.01rem;
+				bottom: 1.2rem;
+
+				background-position: center center;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				background-image: url(../img/donate-btn-other.png);
+			}
+
+			.tencent-proto-wrap {
+				width: 100%;
+				height: 0.3rem;
+				text-align: center;
+				position: absolute;
+				left: 0;
+				bottom: 0.2rem;
+				font-size: 0.12rem;
+				line-height: 0.3rem;
+
+				.check-wrap {
+					position: relative;
+					display: inline-block;
+					vertical-align: middle;
+					width: 0.16rem;
+					height: 0.16rem;
+					margin-right: 0.05rem;
+					border: 1px solid #000;
+
+					&.checked:after {
+						content: "√";
+						position: absolute;
+						left: 0.01rem;
+						top: -0.08rem;
+
+					}
+				}
+
+				.tencent-proto {
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
+
+			.box-close-btn {
+				position: absolute;
+				right: 0;
+				top: 0.7rem;
+				width: 0.6rem;
+				height: 0.6rem;
+				border-radius: 0.3rem;
+				background-color: rgba(255,255,255,0.5);
+
+				&:after {
+					content: "X";
+					position: absolute;
+					left: 0;
+					top: 0;
+					font-size: 0.3rem;
+					width: 0.6rem;
+					height: 0.6rem;
+					text-align: center;
+					line-height: 0.6rem;
+				}
+			}
+		}
+
+		.donate-other-wrap {
+			opacity: 0;
+			width: 5rem;
+			height: 3rem;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -2.5rem;
+			margin-top: -1.5rem;
+
+			text-align: center;
+
+			border-radius: 0.5rem;
+
+			background-color: #d8d092;
+
+			-webkit-transition: opacity 0.5s;
+
+			.other-title {
+				line-height: 1rem;
+			}
+
+			.input-wrap {
+				margin-left: 0.2rem;
+				margin-right: 0.2rem;
+				padding-right: 1rem;
+				line-height: 0.5rem;
+				position: relative;
+				background-color: #fff;
+
+				border-radius: 0.4rem;
+
+			}
+
+			.count {
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 1rem;
+				height: 1rem;
+				text-align: center;
+			}
+
+			.other-input {
+				width: 100%;
+				line-height: 0.5rem;
+				border: 0;
+				text-indent: 10px;
+				background-color: transparent;
+			}
+
+			.other-send-btn {
+				display: block;
+				color: #000;
+				margin: 0.2rem 0.2rem 0;
+				line-height: 0.5rem;
+			}
+
+			.other-close-btn {
+				position: absolute;
+				right: 0;
+				top: 0rem;
+				width: 0.6rem;
+				height: 0.6rem;
+				border-radius: 0.3rem;
+				background-color: rgba(255,255,255,0.5);
+
+				&:after {
+					content: "X";
+					position: absolute;
+					left: 0;
+					top: 0;
+					font-size: 0.3rem;
+					width: 0.6rem;
+					height: 0.6rem;
+					text-align: center;
+					line-height: 0.6rem;
+				}
+			}
+		}
+
+		.donate-rule-wrap {
+			opacity: 0;
+			height: 8.8rem;
+			position: absolute;
+			left: 0.4rem;
+			top: 50%;
+			right: 0.4rem;
+			
+			margin-top: -4.4rem;
+
+			border-radius: 0.5rem;
+
+			background-color: #d8d092;
+
+			-webkit-transition: opacity 0.5s;
+
+			.donate-rule {
+				width: 3.74rem;
+				height: 7.5rem;
+				position: absolute;
+				left: 50%;
+				top: 0.4rem;
+				margin-left: -1.87rem;
+
+				background-position: center center;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				background-image: url(../img/the_rule.png);
+
+			}
+
+			.rule-close-btn {
+				width: 3.74rem;
+				height: 0.6rem;
+				line-height: 0.6rem;
+				text-align: center;
+				position: absolute;
+				left: 50%;
+				margin-left: -1.87rem;
+				bottom: 0.2rem;
+
+				background-position: center center;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				background-image: url(../img/rule-close-btn.png);
+			}
+
+		}
+
+	}
+
+	.gift-wrap {
+		opacity: 0;
+		width: 1.38rem;
+		height: 1.5rem;
+		position: absolute;
+		left: 2.58rem;
+		bottom: 6.35rem;
+
+		.gift-item {
+			width: 1.38rem;
+			height: 1.5rem;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+
+			background-position: center center;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			background-image: url(../img/gift-item.png);
+
+
+		}
+		.ballon-wrap {
+			width: 1.38rem;
+			height: 1.5rem;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+
+		.left-ballon {
+			width: 1.2rem;
+			height: 2.04rem;
+			position: absolute;
+			left: -0.5rem;
+			bottom: 1rem;
+
+			background-position: center center;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			background-image: url(../img/left-ballon.png);
+
+			-webkit-transform-origin: right bottom;
+			-webkit-animation: left-ballon-animation 1s infinite alternate;
+		}
+		.middle-ballon {
+			width: 1.06rem;
+			height: 2.55rem;
+			position: absolute;
+			left: 0.2rem;
+			bottom: 1rem;
+
+			background-position: center center;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			background-image: url(../img/middle-ballon.png);
+
+			-webkit-transform-origin: center bottom;
+			-webkit-animation: middle-ballon-animation 1s infinite alternate;
+		}
+		.right-ballon {
+			width: 1.16rem;
+			height: 1.66rem;
+			position: absolute;
+			left: 0.6rem;
+			bottom: 1.1rem;
+
+			background-position: center center;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			background-image: url(../img/right-ballon.png);
+
+			-webkit-transform-origin: left bottom;
+			-webkit-animation: right-ballon-animation 1s infinite alternate;
+		}
+
+	}
+
+	.gift-box-wrap {
+		opacity: 0;
+		width: 6.4rem;
+		height: 9.71rem;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		background-position: center center;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		background-image: url(../img/gift-box-wrap.png);
+
+		.gift-list {
+			width: 4.64rem;
+			height: 5.05rem;
+			position: absolute;
+			left: 0.9rem;
+			bottom: 1.2rem;
+
+			-webkit-transform: scale(0.4);
+
+			background-position: center center;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			background-image: url(../img/gift-list.png);
+		}
+
+		.gift-box-inner {
+			width: 3.68rem;
+			height: 3.54rem;
+			position: absolute;
+			left: 1.5rem;
+			bottom: 1.7rem;
+
+			background-position: center center;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			background-image: url(../img/gift-box-inner.png);
+		}
+	}
+
+	.girl-wrap {
+		z-index: 30;
+		width: 2.58rem;
+		height: 3.94rem;
+		position: absolute;
+		left: 1.8rem;
+		bottom: 2.78rem;
+
+		.girl-step1 {
+			opacity: 0;
+
+			.girl-body {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 2.58rem;
+				height: 3.94rem;
+				background-position: center center;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				background-image: url(../img/drawing-girl.png);
+			}
+
+			.girl-hand {
+				position: absolute;
+				width: 0.72rem;
+				height: 1.1rem;
+				top: -0.2rem;
+				right: -0.1rem;
+				background-position: center center;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				background-image: url(../img/drawing-hand.png);
+
+				-webkit-transform-origin: center bottom;
+				-webkit-animation: hand-animation 1s infinite alternate;
+			}
+		}
+		.girl-step2 {
+			opacity: 0;
+
+			.girl-stand-left-hand {
+				position: absolute;
+				width: 0.36rem;
+				height: 0.86rem;
+				top: 1.55rem;
+				left: 0.72rem;
+				background-position: center center;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				background-image: url(../img/girl-stand-left-hand.png);
+			}
+
+			.girl-stand-right-hand {
+				position: absolute;
+				width: 0.42rem;
+				height: 1.04rem;
+				top: 1.5rem;
+				right: 0.27rem;
+				background-position: center center;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				background-image: url(../img/girl-stand-right-hand.png);
+			}
+
+			.girl-raise-left-hand {
+				opacity: 0;
+				position: absolute;
+				width: 1.12rem;
+				height: 1.68rem;
+				top: 0.53rem;
+				left: 0.05rem;
+				background-position: center center;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				background-image: url(../img/girl-raise-left-hand.png);
+			}
+
+			.girl-raise-right-hand {
+				opacity: 0;
+				position: absolute;
+				width: 1.16rem;
+				height: 1.44rem;
+				top: 0.62rem;
+				right: -0.32rem;
+				background-position: center center;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				background-image: url(../img/girl-raise-right-hand.png);
+			}
+
+			.girl-body {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 2.58rem;
+				height: 3.94rem;
+				background-position: center center;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				background-image: url(../img/drawing-girl-stand.png);
+			}
+
+		}
+
+		.girl-step3 {
+			opacity: 0;
+
+			.girl-body {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 2.58rem;
+				height: 3.94rem;
+				background-position: center center;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				background-image: url(../img/drawing-girl-color.png);
+			}
+
+			.girl-hand {
+				position: absolute;
+				width: 0.72rem;
+				height: 1.1rem;
+				top: -0.2rem;
+				right: -0.1rem;
+				background-position: center center;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				background-image: url(../img/drawing-hand-color.png);
+
+				-webkit-transform-origin: center bottom;
+				-webkit-animation: hand-animation 1s infinite alternate;
+			}
+		}
+
+		.girl-step1, .girl-step2, .girl-step3 {
+			-webkit-transition: opacity 0.5s;
+		}
+	}
+
+	&.step0 {
+		.guide-top, .guide-bottom, .guide-words, .guide-title {
+			opacity: 1;
+		}
+
+		.guide-words {
+			-webkit-animation: guide-words-read 4s linear forwards;
+		}
+
+		.footer-wrap {
+			opacity: 0;
+		}
+	}
+
+	&.step1 {
+		.girl-step1 {
+			opacity: 1;
+		}
+		.drawing-chair, .drawing-picture, .words-1 {
+			opacity: 1;
+		}
+
+		.footer-wrap {
+			opacity: 1;
+		}
+	}
+	&.step2 {
+		.girl-step2 {
+			opacity: 1;
+			-webkit-animation: girl-down-chair 1s 0.5s forwards;
+		}
+
+		.drawing-chair, .drawing-picture, .words-1 {
+			opacity: 1;
+		}
+
+		.drawing-chair, .drawing-picture, .words-1 {
+			-webkit-animation: hide 0.5s 1.5s forwards;
+		}
+
+		.cloud-1 {
+			-webkit-animation: cloud-1-in 0.8s 2s forwards;
+		}
+
+		.rainbow-wrap {
+			-webkit-animation: cloud-2-in 0.8s 2s forwards;
+		}
+
+		.cloud-3 {
+			-webkit-animation: cloud-3-in 0.8s 2s forwards;
+		}
+
+		.rainbow {
+			-webkit-animation: rainbow-show 0.8s 2.8s forwards;
+		}
+		.words-2 {
+			-webkit-animation: show 0.5s 3.6s forwards;
+		}
+
+		.footer-wrap {
+			opacity: 1;
+		}
+
+	}
+
+	&.step3 {
+		.girl-step2 {
+			opacity: 1;
+			-webkit-transform: translateY(120px);
+
+			-webkit-animation: girl-fly-footer 0.5s 0.5s forwards;
+
+			.girl-stand-left-hand, .girl-stand-right-hand {
+				-webkit-animation: hide 0.5s 0.2s forwards;
+			}
+			.girl-raise-left-hand, .girl-raise-right-hand {
+				-webkit-animation: show 0.5s 0.2s forwards;
+			}
+
+		}
+
+		.gift-wrap {
+			-webkit-animation: gift-show 0.5s 1s forwards;
+		}
+
+		.cloud-1 {
+			-webkit-transform: translateX(0);
+			-webkit-animation: hide 0.2s 0.5s forwards;
+		}
+
+		.rainbow-wrap {
+			-webkit-transform: translateX(0);
+			-webkit-animation: hide 0.2s 0.5s forwards;
+		}
+
+		.cloud-3 {
+			-webkit-transform: translateX(0);
+			-webkit-animation: hide 0.2s 0.5s forwards;
+		}
+
+		.cloud-4,.cloud-5,.rainbow-show,.cloud-6,.cloud-7 {
+			-webkit-animation: show 0.5s 0.5s forwards;
+		}
+
+		.rainbow {
+			height: 6.74rem;
+		}
+
+		.footer-wrap {
+			opacity: 1;
+			-webkit-animation: footer-down 0.5s 0.5s forwards;
+		}
+
+		.gift-item {
+			-webkit-animation: gift-shake 0.6s infinite;
+		}
+
+		&.gift-down {
+
+			.gift-item {
+				-webkit-animation: null;
+			}
+			.girl-step2 {
+				-webkit-transform: translateY(60px);
+				-webkit-animation: hide 0.5s 0.5s forwards;
+			}
+			.gift-wrap {
+				.ballon-wrap {
+					-webkit-animation: ballon-fly 0.5s forwards;
+				}
+				-webkit-animation: gift-down 1.5s forwards;
+			}
+
+			.gift-box-wrap {
+				-webkit-animation: show 0.5s 1s forwards;
+				
+				.gift-list {
+					-webkit-animation: gift-list-show 1s 1s forwards;
+				}
+			}
+			.cloud-4,.cloud-5,.rainbow-show,.cloud-6,.cloud-7 {
+				-webkit-animation: long-hide 1.5s forwards;
+			}
+
+		}
+
+	}
+
+	&.step4 {
+		.girl-step1 {
+			opacity: 1;
+			-webkit-animation: hide 0.5s 1s forwards;
+		}
+		.girl-step3 {
+			-webkit-animation: show 1s 0.5s forwards;
+		}
+
+		.controller-wrap {
+			opacity: 1;
+			z-index: 90;
+		}
+
+
+		.footer-wrap-color, .drawing-chair-color, .drawing-picture-nocolor {
+			-webkit-animation: show 0.5s forwards;
+		}
+
+		&.show_words3 {
+			.words-3 {
+				opacity: 1;
+			}
+		}
+
+
+
+	}
+
+	&.step5 {
+		.donate-bg {
+			z-index: 100;
+			opacity: 1;
+		}
+	}
+
+	
+}
+
+.share-wrap{
+	z-index: 300;
+	display:none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.75);
+
+	-webkit-transition: opacity 0.5s;
+
+	.share-hint {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 5.38rem;
+		height: 2.66rem;
+		background-position: center center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-image: url(../img/share-hint.png);
+	}
+
+}
+
