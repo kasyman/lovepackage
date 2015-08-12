@@ -80,10 +80,10 @@
               <div class="rule-close-btn"></div>
             </div>
             <div class="donate-box">
-              <div class="donate-btn-20 donate-btn">20</div>
-              <div class="donate-btn-50 donate-btn">50</div>
-              <div class="donate-btn-100 donate-btn">100</div>
-              <div class="donate-btn-500 donate-btn">500</div>
+              <div class="donate-btn-20 donate-btn">2</div>
+              <div class="donate-btn-50 donate-btn">5</div>
+              <div class="donate-btn-100 donate-btn">10</div>
+              <div class="donate-btn-500 donate-btn">50</div>
               <div class="tencent-proto-wrap"><span class="check-wrap"></span><span class="tencent-proto">同意《腾讯公益网用户协议》</span></div>
               <div class="box-close-btn"></div>
             </div>
@@ -136,7 +136,7 @@
       _p.actid = 881; 
       
       var _cbSuccessPay = function(data){
-        console.log(data);
+        console.log("data:"+data);
         if(data.ret == 1){
           alert("测试的demo支付成功");
         }else{

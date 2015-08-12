@@ -83,10 +83,10 @@ html(lang="zh-CN",data-use-rem="")
               .donate-rule
               .rule-close-btn
             .donate-box
-              .donate-btn-20.donate-btn 20
-              .donate-btn-50.donate-btn 50
-              .donate-btn-100.donate-btn 100
-              .donate-btn-500.donate-btn 500
+              .donate-btn-20.donate-btn 2
+              .donate-btn-50.donate-btn 5
+              .donate-btn-100.donate-btn 10
+              .donate-btn-500.donate-btn 50
 
               .tencent-proto-wrap
                 span.check-wrap
@@ -134,7 +134,7 @@ html(lang="zh-CN",data-use-rem="")
       _p.actid = 881; 
          
       var _cbSuccessPay = function(data){
-        console.log(data);
+        console.log("data:"+data);
         if(data.ret == 1){
           alert("测试的demo支付成功");
         }else{
