@@ -63,10 +63,12 @@ var slide_model = {
             moveTo();
             wrap.removeClass('gift-down');
 
+            /*
             if(!words3_showed){
                 slide_model.nextable = false;
                 slide_model.preable = false;
             }
+            */
 
             console.log("4");
         },
@@ -248,94 +250,92 @@ rule_close_btn.on('touchstart',function(e){
     donate_box_wrap.removeClass('show-rule');
 });
 
-donate_btn_20.on('touchstart',function(e){
-    location.href = "thanks.html";
-});
-donate_btn_50.on('touchstart',function(e){
-    location.href = "thanks.html";
-});
-donate_btn_100.on('touchstart',function(e){
-    location.href = "thanks.html";
-});
-donate_btn_500.on('touchstart',function(e){
-    location.href = "thanks.html";
-});
-donate_btn_other.on('touchstart',function(e){
-    location.href = "thanks.html";
-});
+// donate_btn_20.on('touchstart',function(e){
+//     location.href = "thanks.html";
+// });
+// donate_btn_50.on('touchstart',function(e){
+//     location.href = "thanks.html";
+// });
+// donate_btn_100.on('touchstart',function(e){
+//     location.href = "thanks.html";
+// });
+// donate_btn_500.on('touchstart',function(e){
+//     location.href = "thanks.html";
+// });
+
 
 /* touchEvent */
-var drawHandle = (function(wrapper, opt){
-    var controller_wrap_width = controller_wrap.width();
-    var drawable = false;
-    var draw_x_now = controller_wrap_width;
+// var drawHandle = (function(wrapper, opt){
+//     var controller_wrap_width = controller_wrap.width();
+//     var drawable = false;
+//     var draw_x_now = controller_wrap_width;
 
-    function TouchHandler (wrapper) {
-        var that = this;
+//     function TouchHandler (wrapper) {
+//         var that = this;
 
-        this.startX = 0;
-        this.startY = 0;
+//         this.startX = 0;
+//         this.startY = 0;
 
-        wrapper.on('touchstart',function(e){
-            that.touchstart.call(that,e);
-        });
-        wrapper.on('touchmove',function(e){
-            that.touchmove.call(that,e);
-        });
-        wrapper.on('touchend',function(e){
-            that.touchend.call(that,e);
-        });
-        wrapper.on('toucncancel',function(e){
-            that.toucncancel.call(that,e);
-        });
-    }
+//         wrapper.on('touchstart',function(e){
+//             that.touchstart.call(that,e);
+//         });
+//         wrapper.on('touchmove',function(e){
+//             that.touchmove.call(that,e);
+//         });
+//         wrapper.on('touchend',function(e){
+//             that.touchend.call(that,e);
+//         });
+//         wrapper.on('toucncancel',function(e){
+//             that.toucncancel.call(that,e);
+//         });
+//     }
 
-    TouchHandler.prototype.touchstart = function (e) {
-        this.startX = e.changedTouches[0].pageX;
-        this.startY = e.changedTouches[0].pageY;
+//     TouchHandler.prototype.touchstart = function (e) {
+//         this.startX = e.changedTouches[0].pageX;
+//         this.startY = e.changedTouches[0].pageY;
 
-        if(this.startX > draw_x_now - 30 && this.startX < draw_x_now + 30){
-            drawable = true;
-        }
-    }
-    TouchHandler.prototype.touchmove = function (e) {
-        var nowX = e.changedTouches[0].pageX;
+//         if(this.startX > draw_x_now - 30 && this.startX < draw_x_now + 30){
+//             drawable = true;
+//         }
+//     }
+//     TouchHandler.prototype.touchmove = function (e) {
+//         var nowX = e.changedTouches[0].pageX;
 
-        if(drawable){
-            drawing_picture_color.width(controller_wrap_width - nowX);
-            rainbow_change.css('right',controller_wrap_width - nowX);
+//         if(drawable){
+//             drawing_picture_color.width(controller_wrap_width - nowX);
+//             rainbow_change.css('right',controller_wrap_width - nowX);
 
-            if(!words3_showed && nowX < controller_wrap_width/2){
-                words3_showed = true;
-                wrap.addClass('show_words3');
+//             if(!words3_showed && nowX < controller_wrap_width/2){
+//                 words3_showed = true;
+//                 wrap.addClass('show_words3');
 
-                slide_model.nextable = true;
-                slide_model.preable = true;
+//                 slide_model.nextable = true;
+//                 slide_model.preable = true;
 
-                arrow_down.removeClass('hide');
-            }
-        }
+//                 arrow_down.removeClass('hide');
+//             }
+//         }
 
-    }
-    TouchHandler.prototype.touchend = function (e) {
-        var nowX = e.changedTouches[0].pageX;
+//     }
+//     TouchHandler.prototype.touchend = function (e) {
+//         var nowX = e.changedTouches[0].pageX;
 
-        if(drawable){
-            drawing_picture_color.width(controller_wrap_width - nowX);
-            rainbow_change.css('right',controller_wrap_width - nowX);
-            draw_x_now = nowX;
+//         if(drawable){
+//             drawing_picture_color.width(controller_wrap_width - nowX);
+//             rainbow_change.css('right',controller_wrap_width - nowX);
+//             draw_x_now = nowX;
 
-        }
+//         }
         
-        drawable = false;
+//         drawable = false;
 
-    }
-    TouchHandler.prototype.toucncancel = function (e) {
-        drawable = false;
-    }
+//     }
+//     TouchHandler.prototype.toucncancel = function (e) {
+//         drawable = false;
+//     }
 
-    return new TouchHandler(wrapper, opt);
-}(controller_wrap));
+//     return new TouchHandler(wrapper, opt);
+// }(controller_wrap));
 
 function moveTo() {
     var back_class = getTypeClass(wrap[0], 'step');

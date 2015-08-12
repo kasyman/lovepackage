@@ -16,7 +16,7 @@
         right: 0;
         bottom: 0;
         background-color: #f0f0f0;
-      
+        
         background-position: center center;
         background-size: 100% 100%;
         background-image: url(../img/bg-crow.jpg);
@@ -37,9 +37,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="share-wrap">
-        <div class="share-hint"></div>
-      </div>
+      <div class="share-wrap"></div>
       <div class="loading-page">
         <div class="loading-number-wrap">加载中 ... (<span class="loading-number">0</span>%)</div>
       </div>
@@ -53,9 +51,6 @@
         <div class="drawing-picture"></div>
         <div class="drawing-picture-nocolor">
           <div class="drawing-picture-color"></div>
-        </div>
-        <div class="controller-wrap">
-          <div class="rainbow-change"></div>
         </div>
         <div class="cloud-1"></div>
         <div class="rainbow-wrap">
@@ -80,30 +75,20 @@
         <div class="drawing-chair-color"></div>
         <div class="donate-bg">
           <div class="donate-box-wrap">
-            <div class="donate-other-wrap">
-              <p class="other-title">请输入捐赠金额</p>
-              <div class="input-wrap">
-                <input type="text" class="other-input"/>
-                <div class="count">元</div>
-              </div><a href="thanks.html" class="other-send-btn">我要送爱心包裹</a>
-              <div class="other-close-btn"></div>
-            </div>
             <div class="donate-rule-wrap">
               <div class="donate-rule"></div>
               <div class="rule-close-btn"></div>
             </div>
             <div class="donate-box">
-              <div class="donate-btn-20"></div>
-              <div class="donate-btn-50"></div>
-              <div class="donate-btn-100"></div>
-              <div class="donate-btn-500"></div>
-              <div class="donate-btn-other"></div>
+              <div class="donate-btn-20 donate-btn">20</div>
+              <div class="donate-btn-50 donate-btn">50</div>
+              <div class="donate-btn-100 donate-btn">100</div>
+              <div class="donate-btn-500 donate-btn">500</div>
               <div class="tencent-proto-wrap"><span class="check-wrap"></span><span class="tencent-proto">同意《腾讯公益网用户协议》</span></div>
               <div class="box-close-btn"></div>
             </div>
           </div>
           <div class="donate-send-btn"></div>
-          <div class="donate-share-btn"></div>
         </div>
         <div class="girl-wrap">
           <div class="girl-step1">
@@ -142,4 +127,27 @@
   <script src="../js/gesture.min.js"></script>
   <script src="../js/loader.min.js"></script>
   <script src="../js/main.js"></script>
+  <script src="https://ssl.gongyi.qq.com/m/weixin/jquery-1.8.3.min.js"></script>
+  <script src="../js/wxpay.js"></script>
+  <script>
+    $(".donate-btn").on('touchstart',function(){
+      var _p = {};
+      _p.money = parseInt($(".donate-btn").html());
+      _p.actid = 881; 
+      
+      var _cbSuccessPay = function(data){
+        console.log(data);
+        if(data.ret == 1){
+          alert("测试的demo支付成功");
+        }else{
+          alert(data.info+" 支付失败");
+        }       
+      }
+      GYPage.WXPAY.payCallback = _cbSuccessPay;
+      GYPage.WXPAY.paySubmit(_p); 
+      });
+      
+      GYPage.WXSNS.share({'title':'','desc':''});
+      
+  </script>
 </html>

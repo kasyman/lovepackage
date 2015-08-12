@@ -8,7 +8,14 @@
 		opacity: 0;
 	}
 }
-
+@-webkit-keyframes long{
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 6.4rem;
+	}
+}
 @-webkit-keyframes long-hide{
 	0% {
 		opacity: 1;

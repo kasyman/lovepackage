@@ -38,7 +38,6 @@ html(lang="zh-CN",data-use-rem="")
   body
     .wrapper
       .share-wrap
-        .share-hint
       .loading-page
         .loading-number-wrap 加载中 ... (<span class="loading-number">0</span>%)
       .p-section
@@ -50,8 +49,8 @@ html(lang="zh-CN",data-use-rem="")
         .drawing-picture
         .drawing-picture-nocolor
           .drawing-picture-color
-        .controller-wrap
-          .rainbow-change
+        //- .controller-wrap
+        //-   .rainbow-change
 
         .cloud-1
         .rainbow-wrap
@@ -79,30 +78,22 @@ html(lang="zh-CN",data-use-rem="")
 
         .donate-bg
           .donate-box-wrap
-            .donate-other-wrap
-              p.other-title 请输入捐赠金额
-              .input-wrap
-                input.other-input(type="text")
-                .count 元
-              a.other-send-btn(href="thanks.html") 我要送爱心包裹
-              .other-close-btn
 
             .donate-rule-wrap
               .donate-rule
               .rule-close-btn
             .donate-box
-              .donate-btn-20
-              .donate-btn-50
-              .donate-btn-100
-              .donate-btn-500
-              .donate-btn-other
+              .donate-btn-20.donate-btn 20
+              .donate-btn-50.donate-btn 50
+              .donate-btn-100.donate-btn 100
+              .donate-btn-500.donate-btn 500
+
               .tencent-proto-wrap
                 span.check-wrap
                 span.tencent-proto 同意《腾讯公益网用户协议》
               .box-close-btn
           
           .donate-send-btn
-          .donate-share-btn
 
         .girl-wrap
           .girl-step1
@@ -134,7 +125,25 @@ html(lang="zh-CN",data-use-rem="")
   script(src='../js/gesture.min.js')
   script(src='../js/loader.min.js')
   script(src='../js/main.js')
+  script(src='https://ssl.gongyi.qq.com/m/weixin/jquery-1.8.3.min.js')
+  script(src='../js/wxpay.js')
+  script.
+    $(".donate-btn").on('touchstart',function(){
+      var _p = {};
+      _p.money = parseInt($(".donate-btn").html());
+      _p.actid = 881; 
+         
+      var _cbSuccessPay = function(data){
+        console.log(data);
+        if(data.ret == 1){
+          alert("测试的demo支付成功");
+        }else{
+          alert(data.info+" 支付失败");
+        }       
+      }
+      GYPage.WXPAY.payCallback = _cbSuccessPay;
+      GYPage.WXPAY.paySubmit(_p); 
+      });
 
-
-
+      GYPage.WXSNS.share({'title':'','desc':''});
 
