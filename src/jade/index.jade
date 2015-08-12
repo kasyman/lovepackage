@@ -83,10 +83,10 @@ html(lang="zh-CN",data-use-rem="")
               .donate-rule
               .rule-close-btn
             .donate-box
-              .donate-btn-20.donate-btn 2
-              .donate-btn-50.donate-btn 5
-              .donate-btn-100.donate-btn 10
-              .donate-btn-500.donate-btn 50
+              .donate-btn-20.donate-btn 20
+              .donate-btn-50.donate-btn 50
+              .donate-btn-100.donate-btn 100
+              .donate-btn-500.donate-btn 500
 
               .tencent-proto-wrap
                 span.check-wrap
@@ -130,15 +130,19 @@ html(lang="zh-CN",data-use-rem="")
   script.
     $(".donate-btn").on('touchstart',function(){
       var _p = {};
-      _p.money = parseInt($(".donate-btn").html());
-      _p.actid = 881; 
+      _p.money = parseInt($(this).html());
+      _p.actid = 881;
+
+      console.log(_p); 
          
       var _cbSuccessPay = function(data){
-        console.log("data:"+data);
+        console.log(data);
         if(data.ret == 1){
-          alert("测试的demo支付成功");
+         alert("测试的demo支付成功");
+         location.href="thanks.html";
         }else{
           alert(data.info+" 支付失败");
+          location.href="thanks.html";
         }       
       }
       GYPage.WXPAY.payCallback = _cbSuccessPay;
